@@ -24,9 +24,9 @@ const secure = (app) => {
       });
     }
   } catch(err) {
-    logger.error(err)
+    logger.error(err);
   }
-  app.use(helmet());
+  //app.use(helmet());
 }
 
 const checkJwt = (jwtToken, cb) => {

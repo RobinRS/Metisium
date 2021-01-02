@@ -103,3 +103,9 @@ dist
 # TernJS port file
 .tern-port
 src/public
+
+# Metisium
+src/addon/addons/*
+key
+key.pub
+package-lock.json

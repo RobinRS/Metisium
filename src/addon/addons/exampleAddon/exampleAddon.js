@@ -11,17 +11,17 @@ const appData = () => { // App Informations
     hasWebAssets: true, // Needs any assets which are exposed? (/pub<AddonFolderName>)
     subURL: '/example', // URL for accessing your add-on
     pages: [ // Descrip all exposed endpoints
-      {name: 'Metisium Settings', href: '/main'},
-      {name: 'Add-On\'s', href: '/addons'}
+      { name: 'Metisium Settings', href: '/main' },
+      { name: 'Add-On\'s', href: '/addons' }
     ],
   }
 }
-
+  
 const onEnable = (logger) => { // Hook which will be called if the addon was successfully enabled
   logger.info('Example Add-on has been enabled');
 }
 
-const onDisable = () => { // Shutdown or disable hook
+const onDisable = (logger) => { // Shutdown or disable hook
   logger.info('Example Add-on has been disabled');
 }
 
